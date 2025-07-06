@@ -84,7 +84,7 @@ Now Claude can handle these naturally and accurately, making it a more reliable 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/soulver-mcp-server.git
+   git clone https://github.com/amotivv/soulver-mcp-server.git
    cd soulver-mcp-server
    ```
 
@@ -282,7 +282,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/soulver-mcp-server/issues)
+- **Issues**: [GitHub Issues](https://github.com/amotivv/soulver-mcp-server/issues)
 - **Documentation**: [MCP Documentation](https://modelcontextprotocol.io/docs)
 - **SoulverCore**: [Official Documentation](https://soulver.app/core/docs)
 
@@ -292,6 +292,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for the Claude Desktop community**
 
-[⭐ Star this repo](https://github.com/yourusername/soulver-mcp-server) • [🐛 Report Bug](https://github.com/yourusername/soulver-mcp-server/issues) • [💡 Request Feature](https://github.com/yourusername/soulver-mcp-server/issues)
+[⭐ Star this repo](https://github.com/amotivv/soulver-mcp-server) • [🐛 Report Bug](https://github.com/amotivv/soulver-mcp-server/issues) • [💡 Request Feature](https://github.com/amotivv/soulver-mcp-server/issues)
 
 </div>
