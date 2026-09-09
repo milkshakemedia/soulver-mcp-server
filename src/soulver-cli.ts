@@ -1,7 +1,8 @@
-import { exec } from 'node:child_process';
+import { exec, execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 
 const execAsync = promisify(exec);
+const execFileAsync = promisify(execFile);
 
 /**
  * Execute a mathematical expression using the Soulver CLI
@@ -16,11 +17,10 @@ export async function executeSoulverExpression(expression: string): Promise<stri
       throw new Error("Expression cannot be empty");
     }
 
-    // Sanitize expression to prevent command injection
-    const sanitizedExpression = expression.replace(/"/g, '\\"');
-    
-    // Execute soulver with proper escaping and timeout
-    const { stdout, stderr } = await execAsync(`soulver "${sanitizedExpression}"`, {
+    // Pass the expression as a discrete argument (no shell involved) so
+    // shell metacharacters and $1-$9 style positional parameters in the
+    // expression can't be interpreted or expanded.
+    const { stdout, stderr } = await execFileAsync('soulver', [expression], {
       timeout: 10000, // 10 second timeout
       encoding: 'utf8',
       maxBuffer: 1024 * 1024 // 1MB buffer limit
